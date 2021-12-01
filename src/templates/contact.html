@@ -1,7 +1,45 @@
 {% extends "layout.html" %}
 
 {% block content %}
-
-  <h1>Contact</h1>
+<div class="title text-center mb-4">
+  <h1>CONTACT US</h1>
+  <h2>Let us know your questions or comments</h2>
+</div>
+<div class="row mx-5 my-5">
+  <div class="col-md-6 mb-3">
+    <label for="validationDefault01" class="form-label text-white"><b><a class="btn btn-outline-light btn-floating m-1"><i class="fas fa-user-tie"></i></a>First Name</b></label>
+    <input type="text" class="form-control" id="validationDefault01" required>
+  </div>
+  <div class="col-md-6 mb-3">
+    <label for="validationDefault02" class="form-label text-white"><b><a class="btn btn-outline-light btn-floating m-1"
+          href="#!" role="button"><i class="fas fa-user-tie"></i></a>Last name</b></label>
+    <input type="text" class="form-control" id="validationDefault02" required>
+  </div>
+  <div class="col-md-6 mb-3">
+    <label for="disabledTextInput" class="form-label text-white"><b><a class="btn btn-outline-light m-1"><i
+            class="fas fa-phone-square-alt"></i></a></i>Phone Number</b></label>
+    <input type="phone" id="disabledTextInput" class="form-control">
+  </div>
+  <div class="col-md-6 mb-3">
+    <label for="exampleFormControlInput1" class="form-label text-white"><b><a
+          class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+            class="fas fa-envelope"></i></a>Email address</b></label>
+    <input type="email" class="form-control" placeholder="name@example.com">
+  </div>
+  <div class="col-md-12 mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label text-white"><b><a
+          class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+            class="fas fa-comment-alt"></i></a>Enter your comment</b></label>
+    <textarea class="form-control" rows="3"></textarea>
+  </div>
+  <div class="col-md-6">
+    <label for="formFile" class="form-label text-white"><b><a class="btn btn-outline-light btn-floating m-1" href="#!"
+          role="button"><i class="fas fa-file-alt"></i></a>Attach a file if necessary</b></label>
+    <input class="form-control" type="file" id="formFile">
+  </div>
+  <div class="d-grid align-self-center mx-auto">
+    <button class="btn btn-lg btn-primary" type="button">Submit information</button>
+  </div>
+</div>
 
 {%endblock%}
